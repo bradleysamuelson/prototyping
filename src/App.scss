@@ -1,47 +1,48 @@
-@font-face {
-  font-family: Proxima Nova W01 Regular;
-  src:
-      url(https://cdn-app.videoamp.com/preamp/fonts/5596735/b38b8bd9-d96f-4bf9-add1-adbd2b08b802.woff2) format("woff2"),
-      url(https://cdn-app.videoamp.com/preamp/fonts/5596735/52ed7b2d-8a31-4b18-a1d5-8685608b0889.woff) format("woff");
-}
-@font-face {
-  font-family: Proxima Nova W01 Light;
-  src:
-      url(https://cdn-app.videoamp.com/preamp/fonts/5596764/122f8a1b-fa6b-4246-8d37-911edb4ac556.woff2) format("woff2"),
-      url(https://cdn-app.videoamp.com/preamp/fonts/5596764/0f51d8b8-bda2-4557-9b56-0a4e94ab63d9.woff) format("woff");
-}
-@font-face {
-  font-family: Proxima Nova W01 Bold;
-  src:
-      url(https://cdn-app.videoamp.com/preamp/fonts/5596920/cc85d073-4dcf-4ecd-9804-40c34e631e2b.woff2) format("woff2"),
-      url(https://cdn-app.videoamp.com/preamp/fonts/5596920/332136cf-33d0-43fb-97ee-49c7742489ff.woff) format("woff");
-}
-@font-face {
-  font-family: Proxima Nova W01 Medium;
-  src:
-      url(https://cdn-app.videoamp.com/preamp/fonts/5597946/5622d11c-c6b8-476c-9d17-995348bd8400.woff2) format("woff2"),
-      url(https://cdn-app.videoamp.com/preamp/fonts/5597946/d8a5d085-4356-4bc9-b496-51439ecdcd04.woff) format("woff");
-}
-@font-face {
-  font-family: Proxima Nova W01 Thin;
-  src:
-      url(https://cdn-app.videoamp.com/preamp/fonts/5738875/ad4a2691-471a-4c43-b88f-0d144d680661.woff2) format("woff2"),
-      url(https://cdn-app.videoamp.com/preamp/fonts/5738875/1da53474-ed78-41a6-872b-7397556eceee.woff) format("woff");
-}
-@font-face {
-  font-family: Proxima Nova W01 Semibold;
-  src:
-      url(https://cdn-app.videoamp.com/preamp/fonts/5738932/c7dcb253-8dca-459b-aaa9-afef9131ef22.woff2) format("woff2"),
-      url(https://cdn-app.videoamp.com/preamp/fonts/5738932/390be235-bf11-42ee-8ba1-2dd10ca6a4ac.woff) format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+// @font-face {
+//   font-family: Proxima Nova W01 Regular;
+//   src:
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5596735/b38b8bd9-d96f-4bf9-add1-adbd2b08b802.woff2) format("woff2"),
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5596735/52ed7b2d-8a31-4b18-a1d5-8685608b0889.woff) format("woff");
+// }
+// @font-face {
+//   font-family: Proxima Nova W01 Light;
+//   src:
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5596764/122f8a1b-fa6b-4246-8d37-911edb4ac556.woff2) format("woff2"),
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5596764/0f51d8b8-bda2-4557-9b56-0a4e94ab63d9.woff) format("woff");
+// }
+// @font-face {
+//   font-family: Proxima Nova W01 Bold;
+//   src:
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5596920/cc85d073-4dcf-4ecd-9804-40c34e631e2b.woff2) format("woff2"),
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5596920/332136cf-33d0-43fb-97ee-49c7742489ff.woff) format("woff");
+// }
+// @font-face {
+//   font-family: Proxima Nova W01 Medium;
+//   src:
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5597946/5622d11c-c6b8-476c-9d17-995348bd8400.woff2) format("woff2"),
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5597946/d8a5d085-4356-4bc9-b496-51439ecdcd04.woff) format("woff");
+// }
+// @font-face {
+//   font-family: Proxima Nova W01 Thin;
+//   src:
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5738875/ad4a2691-471a-4c43-b88f-0d144d680661.woff2) format("woff2"),
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5738875/1da53474-ed78-41a6-872b-7397556eceee.woff) format("woff");
+// }
+// @font-face {
+//   font-family: Proxima Nova W01 Semibold;
+//   src:
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5738932/c7dcb253-8dca-459b-aaa9-afef9131ef22.woff2) format("woff2"),
+//       url(https://cdn-app.videoamp.com/preamp/fonts/5738932/390be235-bf11-42ee-8ba1-2dd10ca6a4ac.woff) format("woff");
+// }
 
 :root {
-  --font-bold: "Proxima Nova W01 Bold", "Arial", sans-serif;
-  --font-light: "Proxima Nova W01 Light", "Arial", sans-serif;
-  --font-medium: "Proxima Nova W01 Medium", "Arial", sans-serif;
-  --font-regular: "Proxima Nova W01 Regular", "Arial", sans-serif;
-  --font-semibold: "Proxima Nova W01 Semibold", "Arial", sans-serif;
-  --font-thin: "Proxima Nova W01 Thin", "Arial", sans-serif;
+  --font-bold: "Roboto", "Arial", sans-serif;
+  --font-light: "Roboto", "Arial", sans-serif;
+  --font-medium: "Roboto", "Arial", sans-serif;
+  --font-regular: "Roboto", "Arial", sans-serif;
+  --font-semibold: "Roboto", "Arial", sans-serif;
+  --font-thin: "Roboto", "Arial", sans-serif;
 
   font-family: --font-light;
   -webkit-font-smoothing: auto;
