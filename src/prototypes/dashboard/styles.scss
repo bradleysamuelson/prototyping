@@ -1,0 +1,67 @@
+// add styles for this prototype
+.dashboard-layout {
+    --va-sandy: #EEECE6;
+    --va-sandy-light: #F8F6F3;
+    --va-nav-select-bg: gray;
+}
+
+.nav-global {
+    height: 78px;
+    background-color: black;
+    padding: 0 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left {
+        display: flex;
+        align-items: center;
+    }
+    .va-logo {
+        margin-left: 0;
+        margin-right: 47px;
+    }
+    .nav-global-select {
+        background-color: #272927;
+        color: white;
+    }
+}
+
+.advertiser-select {
+    background-color: #272927;
+    border-radius: 4px;
+    padding:0.25rem 1rem 0.25rem 0;
+    .MuiSelect-select {
+        padding: 0.25rem 1rem; 
+        font-size: 0.875rem !important;       
+    }
+    .MuiListItemIcon-root, .MuiSvgIcon-root:not(.company-logo) {
+            display: none;
+    }
+    .MuiSelect-select {
+        padding-right: 0 !important;
+    }
+}
+.advertiser-select-item-name {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.advertiser-select-footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    background-color: #1F2220;
+    color: #888;
+    border-top: 1px solid #272927;
+    font-size: 0.75rem;
+    font-weight: 700;
+    a {
+        margin-left: 0.5rem;
+    }
+}

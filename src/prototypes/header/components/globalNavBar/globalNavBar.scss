@@ -1,0 +1,42 @@
+.va-nav-bar {
+    height: 78px;
+    background-color: black;
+    padding: 0 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-left {
+        display: flex;
+        align-items: center;
+    }
+    .va-logo {
+        margin-left: 0;
+        margin-right: 47px;
+    }
+    .nav-global-select {
+        background-color: #272927;
+        color: white;
+    }
+    
+    .top-bar-left {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .top-bar-right {
+        display: flex;
+        align-items: center;
+        padding: 0 1rem;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .user-icon {
+        margin-left: 1rem;
+        background-color: #262626;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,42 @@
+.va-platform-header {
+    height: 64px;
+    color: white;
+    background-color: #111;
+}
+.layout-container {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 64px);
+    height: 100%;
+}
+
+.nav-main {
+    min-height: calc(100vh - 64px);
+    flex-grow: 0;
+}
+.layout-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.nav-logo {
+    .va-app-bar-item {
+        padding-top: 6px;
+    }
+}
+
+.va-app-bar.proto-app-bar {
+    --appbar-item-icon-hover-color: #777;
+    --appbar-item-icon-current-color: #777;
+    box-shadow: rgba(0, 0, 0, .20) -8px 0px 12px -8px inset;
+    background-color: rgb(245, 245, 245);
+    .va-app-bar-item:hover, .va-app-bar-item-current {
+        background-color: rgba(0, 0, 0, 0.04);
+    }
+}
+
+.placeholder-container {
+    background-color: var(--va-grey-300);
+    padding: 3rem;
+    display: flex;
+}

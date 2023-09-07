@@ -1,0 +1,146 @@
+.preamp-update-container {
+    --black-cat: #000;
+    --venom: #181a18;
+    --tombstone: #333;
+    --morbius: #555;
+    --vulture: #777;
+    --doc-ock: #afaca4;
+    --rhino: #d2d0ca;
+    --sandman: #eeece7;
+    --chameleon: #f8f6f3;
+    --man-wolf: #fffefc;
+    --green-goblin: #9fff01;
+    --lizard: #88D902;
+    --kingpin: #fff;
+    font-family: var(--font-regular);
+
+    h1, h2 {
+        margin-bottom: 2rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    .va-title-bar {
+        color: white;
+        padding: 0 2rem;
+    }
+    .page-container {
+        padding: 1rem;
+    }
+    section {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        
+        &.variant {
+          background-color: var(--venom);
+        }
+      }
+      
+      .btn {
+        padding: 1rem 1.5rem;
+        font-family: arial;
+        background-color: var(--venom);
+        display: flex;
+        align-items: center;
+        border-radius: 24px;
+        color: white;
+        cursor: pointer;
+        border: 1px solid var(--venom);
+        font-size: 12px;
+        font-family: var(--font-medium);
+        
+        &:hover {
+          background-color: var(--morbius);
+        }
+        &:focus {
+            outline: 0;
+        }
+        &:focus-visible, &:active {
+          outline: 0;
+          background-color: var(--vulture);
+        }
+        &.variant {
+          background-color: var(--green-goblin);
+          color: #181a18;
+          border-color: var(--green-goblin);
+        
+          &:hover {
+            background-color: #CFFF80;
+            border-color: #CFFF80;
+          }
+          &:focus-visible, &:active {
+            background-color: var(--lizard);
+          }
+        }
+        &.secondary {
+          background-color: transparent;
+          color: var(--venom);
+          &:hover {
+            background-color: var(--sandman);
+          }
+          &:focus-visible, &:active {
+            background-color: var(--rhino);
+          }
+          &.variant {
+            border-color: white;
+            background-color: transparent;
+            color: white;
+            &:hover {
+              background-color: var(--tombstone);
+            }
+            &:focus-visible, &:active {
+              background-color: var(--vulture);
+            }
+            &:disabled {
+              border-color: var(--doc-ock);
+            }
+          }
+          &:disabled {
+            background-color: transparent;
+            border-color: var(--rhino);
+            color: var(--doc-ock);
+          }
+        }
+        &.link {
+          background-color: transparent;
+          border: 0;
+          padding: 1rem 0.625rem;
+          color: var(--venom);
+          &:hover {
+            color: var(--vulture);
+          }
+          &:focus-visible {
+            text-decoration: underline;
+          }
+          &:active {
+              color: var(--tombstone);
+          }
+          &.variant {
+            color: white;
+            &:hover {
+              background-color: transparent;
+              color: var(--rhino); 
+            }
+            &:focus-visible {
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            &:active {
+                color: var(--doc-ock);
+            }
+          }
+          &:disabled {
+            background-color: transparent;
+            color: var(--doc-ock);
+          }
+        }
+        &:disabled, &.variant:disabled {
+          background-color: var(--rhino);
+          color: var(--vulture);
+          border-color: var(--rhino);
+          cursor: default;
+        }
+      }
+}

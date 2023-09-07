@@ -1,0 +1,64 @@
+.prototype-home-container {
+    padding: 80px 60px;
+
+    h1 {
+        font-size: 3rem;
+        font-family: var(--font-light);
+        line-height: 1.5;
+    }   
+
+.prototype-home-header {
+    border-bottom: 1px solid var(--va-grey-300);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    .va-logo {
+        margin: 0;
+    }
+}
+.prototype-list-container {
+    display: flex;
+    gap: 2rem;
+    .latest-prototypes {
+        width: 70%;
+    }
+    .archived-prototypes {
+        width: 30%;
+        
+    }
+    h3 {
+        margin-bottom: 2rem;
+    }
+}
+.secondary-prototypes {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    .workflows, .experiments {
+        width: 50%;
+    }
+}
+.prototype-list {
+    margin-bottom: 2rem;
+    li {
+        
+        border-radius: 0.25rem;
+        margin-bottom: 0.5rem;
+        &:hover {
+            background: var(--va-grey-300);
+        }
+        a {
+            display: block;
+            padding: 0.5rem;
+        }
+    }
+}
+.latest-prototypes {
+    .prototype-list {
+        li:hover {
+            background: var(--va-grey-200);
+        }
+    }
+}
+}

@@ -1,0 +1,246 @@
+// add styles for this prototype
+.inline-edit-container {
+    --border-color: #CCCCCC;
+    --background-color: #EEECE6;
+    --background-color-light: #F8F6F3;
+    --btn-bg-primary: #9EFF00;
+    --btn-bg-primary-hover: #83D400;
+    --btn-bg-primary-focus: #83D400;
+    --btn-text-primary: black;
+    --va-form-border-active: var(--border-color);
+    --btn-text-link: black;
+    --btn-text-link-hover: var(--va-grey-600);
+    --btn-text-link-active: var(--va-grey-700);
+    --btn-text-link-focus: var(--va-grey-700);
+
+    --select-color-box-link-hover: #D2D0CA;
+
+    background-color: white;
+    min-height: 100vh;
+    .content-header {
+        background: var(--background-color);
+        padding: 1rem 4rem;
+    }
+    .form-content-container {
+        padding: 2rem 4rem;
+        min-height: 700px;
+    }
+    .edited-check {
+        color: var(--va-green-600);
+        opacity: 0;
+        &.edited-check-visible {
+            animation: edited-check 2s ease forwards;
+        }
+    }
+    .new-data-name, .title-edit-textfield {
+        margin-left: -0.5rem;
+    }
+    .new-data-name, .new-data-description  {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0.5rem;
+        // margin-left: -0.5rem;
+        margin-right: 1rem;
+        border-radius: 4px;
+        max-width: 600px;
+        text-align: left;
+        &:hover {
+            background-color: #D2D0CA;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .inline-edit-icon {
+        color: #888;
+        margin-right: 0.5rem;
+    }
+    .new-data-description {
+        font-size: 1rem;
+        margin-left: -0.5rem;
+        &:hover {
+            background-color: #E7E5DF;
+        }
+
+    }
+    .title-edit-textfield {
+        max-width: 600px;
+        height: auto;
+        padding: 0.3rem 0.5rem;
+        background-color: transparent;
+        .va-form-control {
+            font-size: 2rem;
+            height: auto;
+        }
+    }
+    .form-item-container {
+        width: 320px;
+        padding: 1rem 0;
+        margin-bottom: 2rem;
+    }
+    .form-item-container label {
+        display: block;
+        font-weight: 700;
+        font-size: .75rem;
+        color: #000;
+        margin-bottom: 0.5rem;
+        &.va-toggle-label {
+            display: flex;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0;
+            .va-toggle {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .empty-value {
+        display: flex;
+        align-items: center;
+        font-size: 0.875rem;
+        color: var(--va-grey-500);
+        font-style: italic;
+        .va-signal-icon {
+            margin-right: 0.25rem;
+        }
+    }
+    .check-button-group {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        .va-btn + .va-btn {
+            margin: 0;
+        }
+    }
+    .va-btn-primary.check-button {
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: 20px;
+        &:focus:not(:focus-visible) {
+            border: 1px solid var(--border-color);
+            background-color: white;
+        }
+        &:hover {
+            border: 1px solid black;
+            background-color: white;
+        }
+        &:focus-visible {
+            border: 1px solid black;
+            background-color: white;
+        }
+
+    }
+    .va-btn-primary.check-button--selected {
+        background-color: black;
+        color: white;
+        border-color: black;
+        &:focus:not(:focus-visible) {
+            background-color: black;
+            border-color: black;
+            color: white;
+        }
+        &:hover {
+            background-color: #333;
+            border-color: black;
+            color: white;
+        }
+        &:focus-visible {
+            background-color: #333;
+            border-color: black;
+            color: white;
+        }
+    }
+    .inline-toggle-container {
+        display: flex;
+        align-items: center;
+        .va-input {
+            padding: 0;
+
+        }
+    }
+    .va-select.va-select--box-link {
+        margin-left: -0.5rem;
+        .va-select__control {
+            padding-left: 0.5rem;
+            border: 1px solid transparent;
+            .va-select__indicators {
+                opacity: 0;
+            }
+            &:hover {
+                .va-select__indicators {
+                    opacity: 1;
+                }
+            }
+            &.va-select__control--is-focused {
+                background-color: transparent;
+                border-color: var(--border-color);
+            }
+        }
+        .va-select__element .va-select__single-value {
+            color: black;
+            font-size: 1rem;
+        }
+    }
+    .form-item-content-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .section-wide {
+        width: 340px;
+    }
+    .saving-indicator-container {
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+        .va-processing-indicator {
+            width: 1rem;
+            height: 1rem;
+        }
+        &.saving-process {
+            opacity: 1;
+            transition: opacity 0.25s ease;
+        }
+    }
+    .instrux {
+        position: fixed;
+        right: -20px;
+        padding: 2rem 3rem 2rem 2rem;
+        top: 90px;
+        width: 440px;
+        min-height: 500px;
+        background: white;
+        border-radius: 4px;
+        line-height: 1.35;
+        a {
+            color: var(--va-teal-400);
+            font-weight: 700;
+            text-decoration: underline;
+            &:hover {
+                color: black;
+            }
+        }
+        h2, ul, p {
+            margin-bottom: 1rem;
+        }
+        ol {
+            list-style: decimal;
+            margin-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+    @media screen and (max-width: 840px) {
+        .instrux {
+          position: relative;
+          right: 0;
+          top: 0;
+          width: 90%;
+          margin: 0 auto;
+          min-height: auto;
+          margin-bottom: 2rem;
+        }
+      }
+}

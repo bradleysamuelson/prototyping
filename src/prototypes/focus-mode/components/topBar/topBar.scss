@@ -1,0 +1,40 @@
+.top-bar-white {
+    height: 80px;
+    background-color: #FFFEFC;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 8px solid black;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000;
+}
+.top-bar-left {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.top-bar-right {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 500;
+}
+.user-icon {
+    margin-left: 1rem;
+    background-color: #262626;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+.va-logo {
+    width: 32px;
+    height: auto;
+    margin-left: 24px;
+    margin-right: 3rem;
+}

@@ -1,0 +1,537 @@
+
+.appbar {
+    height:  100vh;
+    width: 72px;
+    background:  var(--va-grey-800);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    img  {
+      width: 72px;
+      height: auto;
+    }
+    .navbarbottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  
+  .buy-container {
+    padding: 2rem 2rem 2rem 6rem;
+  }
+  .buy-header-img {
+    height: 96px;
+    width: auto;
+  }
+  .comparison-container {
+    padding: 2rem;
+  }
+  .comparison-card-container {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+  .comparison-card {
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid var(--va-grey-400);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.03);
+    width: 320px;
+    height: 200px;
+    margin-right: 20px;
+    .win-pill {
+      background-color: var(--va-grey-800);
+      color: white;
+      border-radius: 12px;
+      font-family: var(--font-bold);
+      text-transform: uppercase;
+      padding: 2px 12px;
+      font-size: 0.625rem;
+      margin-right: 0.5rem;
+    }
+    .card-header {
+      border-bottom: 1px solid var(--va-grey-400);
+      text-align: center;
+      padding: 18px;
+      font-size: 0.8125rem;
+    }
+    .card-content {
+      padding: 18px 24px;
+    }
+    .metric-value {
+      font-size: 2.5rem;
+      font-family: var(--font-light);
+      color: black;
+      padding: 0 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .metric-label {
+      text-transform: uppercase;
+      font-size: 0.625rem;
+      font-family: var(--font-bold);
+      padding: 0 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .comparison-chart-table-image {
+    width: 1340px;
+    height: auto;
+  }
+  
+  .scenario-container {
+    display: flex;
+  }
+  
+  .leftpanel {
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: white;
+    width: 320px;
+    padding: 20px 20px 70px;
+    min-height: calc(100vh - 40px);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    .va-card-nav {
+      margin-bottom: 20px;
+      &.disabled {
+        background-color: var(--va-grey-200);
+        opacity: 0.75;
+        pointer-events: none;
+      }
+    }
+    .cardnav-table {
+      display: flex;
+      justify-content: space-between;
+      .label {
+        display: block;
+        font-family: var(--font-medium);
+        text-transform: uppercase;
+        font-size: 0.625rem;
+      }
+      .metric {
+        font-family: var(--font-regular);
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .scenario-view {
+    padding: 36px 20px 36px 36px;
+    width: 100vw;
+  }
+  .va-btn-full.comparison-link {
+    text-align: right;
+  }
+  .scenario-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .content-control-bar {
+    padding: 1.5rem 0 ;
+  }
+  .content-section-empty {
+    font-family: var(--font-bold);
+    padding: 200px;
+    text-align: center;
+    min-width: 700px;
+  }
+  
+  .linear-inventory-metric-panel .va-panel-content {
+    display: flex;
+    align-items: center;
+    .va-metric-grid {
+      margin-bottom: 0;
+      margin-left: 2rem;
+    }
+  }
+  
+  .panel-head--border {
+    border-bottom: 1px solid var(--va-grey-300);
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding: 0 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .panel-head-title {
+    font-size: 1rem;
+    font-family: var(--font-bold);
+    img {
+      height: 34px;
+      width: auto;
+    }
+  }
+  .panel-head-actions {
+    display: flex;
+  }
+  .card-metrics {
+    display: flex;
+    padding: 2rem;
+    .metric-container {
+      margin-right: 3rem;
+    }
+    .metric {
+      color: var(--va-grey-800);
+      font-size: 19px;
+    }
+    .metric-label {
+      color: var(--va-grey-600);
+      font-size: 10px;
+      font-family: var(--font-semibold);
+      text-transform: uppercase;
+    }
+  }
+  .expandable-card-header {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .va-signal-icon {
+      margin-right: 0.5rem;
+    }
+    .card-metrics {
+      opacity: 1;
+      padding-bottom: 0;
+      margin-right: 80px;
+      text-align: right;
+      transition: opacity .5s ease;
+      &--no-actions {
+        margin-right: 0;
+        padding-right: 0;
+      }
+      .metric-container {
+        &:last-child {
+          margin-right: 0
+        }
+      }
+    }
+  }
+  // .va-expandable-expanded {
+  //   .expandable-card-header {
+  //     .card-metrics {
+  //       opacity: 0;
+  //     }
+  //   }
+  // }
+  .expandable-title {
+    font-family: var(--font-medium);
+    font-size: 1rem;
+  }
+  .expandable-title--small {
+    font-family: var(--font-bold);
+    font-size: 11px;
+  }
+  span.expandable-title-copy {
+    position: relative;
+    top: -5px;
+  }
+  .expandable-card--parent {
+    .va-expandable-arrow {
+      top: 22px;
+    }
+    .card-metrics {
+      padding-top: 0;
+    }
+  }
+  .expandable-card-child {
+    margin-bottom: 1rem;
+  }
+  .expandable-title--rasterlogo {
+    display: flex;
+    align-items: center;
+  }
+  .viacom-logo {
+    width: 24px;
+    height: auto;
+    display: inline;
+    margin-right: 0.5rem;
+  }
+  
+  .takeover-container {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+    .takeover-close {
+      position: absolute;
+      right: 24px;
+      top: 24px;
+    }
+  }
+  
+  .takeover-start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem;
+    .takeover-title, .takeover-subtitle {
+      text-align: center;
+    }
+  }
+    .takeover-title {
+      font-size: 2rem;
+      font-family: var(--font-light);
+      margin-bottom: 0.5rem;
+    }
+    .takeover-subtitle {
+      font-size: 0.875rem;
+      font-family: var(--font-light);
+      margin-bottom: 2rem;
+    }
+  .takeover-start-buttons {
+    padding-top: 100px;
+  }
+  .takeover-selection {
+    display: flex;
+    justify-content: space-between;
+    width: 880px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    background: var(--va-grey-100);
+    box-shadow: 0px 1px 4px rgba(22, 29, 37, 0.08);
+    padding: 12px 24px;
+    font-size: 0.875rem;
+    font-family: var(--font-regular);
+    border-radius: 8px;
+    &:hover {
+      background-color: var(--va-grey-200);
+    }
+    &:focus {
+      outline: 0;
+    }
+    &.new-selection {
+      margin-bottom: 3rem;
+    }
+    &.selected {
+      background-color: var(--va-cyan-50);
+    }
+  }
+  .takeover-workflow-container {
+    padding-bottom: 50px;
+    .takeover-workflow-header {
+      padding: 80px 70px 20px;
+      
+    }
+    .va-tabs {
+        padding-left: 70px;
+    }
+    .va-panel {
+      margin-bottom: 12px;
+    }
+  }
+  .takeover-workflow-container-content {
+    padding: 20px 80px;
+  }
+  .modify-select-container {
+    display: flex;
+    width: 600px;
+    margin-bottom: 2rem;
+    .va-select {
+      width: 200px;
+      margin-right: 1rem;
+    }
+  }
+  .modify-table-header {
+    display: flex;
+    font-family: var(--font-bold);
+    font-size: 10px;
+    color: var(--va-grey-600);
+    text-transform: uppercase;
+    padding: 8px 0;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    border-top: 1px solid var(--va-grey-300);
+    border-bottom: 1px solid var(--va-grey-300);
+    .column-1 {
+      width: 295px;
+      padding-left: 30px;
+    }
+    .column-budget-range {
+      width: 160px;
+    }
+    .column-2 {
+      width: 230px;
+    }
+    .column-3 {
+      width: 182px;
+      text-align: right;
+    }
+    .column-toggles {
+      width: 160px;
+      padding-left: 30px;
+    }
+  }
+  .modify-table-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--va-grey-300);
+    justify-content: space-between;
+    padding: 4px 0;
+    &:first-child {
+      .modify-table-cell:not(.column-budget) {
+        font-family: var(--font-semibold);
+      }
+    }
+    .va-btn-icon {
+        margin-left: 0.25rem;
+    }
+    .va-input-container {
+        margin-right: 0.75rem;
+    }
+    &.modified {
+        background-color: var(--va-teal-100);
+        .va-btn-icon, .va-signal-icon:not(.network-invalid) {
+            color: var(--va-teal-400);
+        }
+        
+        &.previous-constraint {
+            background-color: var(--va-grey-200);
+            .va-btn-icon, .va-signal-icon {
+                color: var(--va-grey-600);
+            }
+        }
+    }
+    .network-invalid {
+        color: var(--va-red-500);
+    }
+    .content-columns {
+      display: flex;
+      align-items: center;
+      .column-1 {
+        padding: 0 10px;
+        width: 265px;
+      }
+      .column-budget-range {
+        width: 160px;
+      }
+      .column-budget {
+        width: 230px;
+        padding-right: 20px;
+        .va-input-container {
+          height: 1.75rem;
+          padding-right: 5px;
+        }
+        .va-form-control {
+          height: 1.75rem;
+        }
+      }
+      .column-3 {
+        text-align: right;
+        width: 182px;
+      }
+      .column-4 {
+        text-align: left;
+        padding-left: 2rem;
+        width: 222px;
+      }
+  
+      .column-toggles {
+        width: 160px;
+        padding-left: 30px;
+        .va-toggle {
+          margin: 0;
+        }
+      }
+    }
+    .va-input-append {
+        min-width: 30px;
+    }
+  }
+  .budget-percent {
+    font-size: 10px;
+    font-family: var(--font-medium);
+  }
+  .create-scenario-field-container {
+    width: 400px;
+    padding-top: 40px;
+  }
+  
+  .inclusions {
+    padding: 40px 80px;
+    img {
+      width: 830px;
+      height: auto;
+    }
+  }
+  .advanced-constraints {
+    padding: 40px 80px;
+    img {
+      width: 1290px;
+      height: auto;
+    }
+  }
+
+  .modify-linear-toolbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .modified-copy {
+      font-size: 0.75rem;
+  }
+  .previous-constraint-row {
+      background-color: var(--va-grey-200);
+  }
+  .popover {
+        position: absolute;
+        bottom: 0;
+        z-index: 1000;
+    
+        .popover-content {
+            background: var(--va-grey-0);
+            padding: 1rem;
+            border: 1px solid var(--va-grey-400);
+            border-radius: 8px;
+
+            p {
+                font-size: 0.875rem;
+            }
+            .va-btn-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 1rem;
+            }
+        }
+  }
+  .invalid-container {
+      position: relative;
+      .popover {
+          display: none;
+          width: 540px;
+          left: -140px;
+          padding-bottom: 30px;
+          
+          
+      }
+      &:hover {
+          .popover {
+              display: block;
+          }
+      }
+  }
+  .invalid-container--field {
+        position: relative;
+        .popover {
+            display: none;
+            width: 360px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-bottom: 36px;
+        }
+        &:focus-within {
+            .popover {
+                display: block;
+            }
+        }
+  }

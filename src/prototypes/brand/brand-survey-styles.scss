@@ -1,0 +1,155 @@
+.brand-form-container {
+    padding: 60px 120px;
+    font-size: 1.125rem;
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+    .top-questions {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid var(--va-grey-300);
+        .va-select .va-form-label {
+            display: block;
+            margin-bottom: 8px;
+        }
+    }
+    .top-question-container {
+        width: 50%;
+        padding-right: 2rem;
+        & + .top-question-container {
+            padding-right: 0;
+            padding-left: 2rem;
+        }
+    }
+    .field-description {
+        font-size: 0.75rem;
+        color: var(--va-grey-800);
+        padding: 2px 0;
+    }
+    .form-section {
+        margin-bottom: 2rem;
+    }
+    .form-content-container {
+        display: flex;
+    }
+    p, ul {
+        margin-bottom: 2.5rem;
+        line-height: 1.5;
+    }
+    .combo-field-container {
+        display: inline-flex;
+        align-items: center;
+    }
+    .inline-dropdown {
+        width: 10rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.25rem;
+        min-height: 28px;
+        &.inline-dropdown-wide {
+            width: 12rem;
+            margin-right: 0;
+        }
+        .va-select__single-value {
+            line-height: 22px;
+        }
+        &:focus {
+            outline: none;
+        }
+        & + .inline-dropdown {
+            margin-left: 0;
+        }
+        &.field-other {
+            width: 5rem;
+            margin-right: 0;
+            .va-select__control {
+                border-radius: 4px 0 0 4px;
+                border-right: 0;
+            }
+
+        }
+        &.va-select--compact .va-select__menu {
+            min-width: 11rem;
+        }
+    }
+    .other-field {
+        width: 14rem;
+        display: inline-block;
+        padding: 2px 8px;
+        min-height: 28px;
+        height: 33px;
+        border-radius: 0 4px 4px 0;
+        margin-right: 0.5rem;
+        margin-bottom: 0.25rem;
+        .va-form-control {
+            line-height: 24px;
+            height: 26px;
+        }
+    }
+    .p-tight {
+        margin-bottom: 0.25rem;
+    }
+    .form-list {
+        list-style: disc;
+        margin-left: 2rem;
+        li {
+            margin-bottom: 0.25rem;
+        }
+    }
+    .form-column-two {
+        width: 320px;
+        padding-left: 5rem;
+        flex-shrink: 0;
+        position: sticky;
+        top: 20px;
+        align-self: flex-start;
+        height: auto;
+
+        h2 {
+            font-size: 24px;
+            color: black;
+            margin-bottom: 3rem;
+        }
+    }
+    .why-question {
+        font-size: 0.875rem;
+        color: var(--va-grey-800);
+        line-height: 1.35;
+        margin-bottom: 0.25rem;
+    }
+    .why-question-container {
+        padding-bottom: 2rem;
+        // border-bottom: 1px solid var(--va-grey-300);
+        & + .why-question-container {
+            padding-top: 1rem;
+        }
+    }
+    strong {
+        font-family: var(--font-bold);
+    }
+    @media screen and (max-width: 900px) {
+        padding: 30px;
+        .top-questions {
+            display: block;
+        }
+        .top-question-container {
+            width: 100%;
+            margin-bottom: 2rem;
+            padding-right: 0;
+            & + .top-question-container {
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+        }
+        .form-content-container {
+            display: block;
+        }
+        .form-column-two {
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}
