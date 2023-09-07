@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ux-vision/static/css/main.d36285c8.chunk.css",
+    "main.css": "/ux-vision/static/css/main.e1eedc7d.chunk.css",
     "main.js": "/ux-vision/static/js/main.274b2b50.chunk.js",
     "main.js.map": "/ux-vision/static/js/main.274b2b50.chunk.js.map",
     "runtime-main.js": "/ux-vision/static/js/runtime-main.122acadb.js",
@@ -12,7 +12,7 @@
     "static/js/3.89aa65da.chunk.js.map": "/ux-vision/static/js/3.89aa65da.chunk.js.map",
     "index.html": "/ux-vision/index.html",
     "static/css/2.00509426.chunk.css.map": "/ux-vision/static/css/2.00509426.chunk.css.map",
-    "static/css/main.d36285c8.chunk.css.map": "/ux-vision/static/css/main.d36285c8.chunk.css.map",
+    "static/css/main.e1eedc7d.chunk.css.map": "/ux-vision/static/css/main.e1eedc7d.chunk.css.map",
     "static/js/2.5d1db067.chunk.js.LICENSE.txt": "/ux-vision/static/js/2.5d1db067.chunk.js.LICENSE.txt",
     "static/media/NBC-deal.dd019187.png": "/ux-vision/static/media/NBC-deal.dd019187.png",
     "static/media/activation-expanded.385d35a2.png": "/ux-vision/static/media/activation-expanded.385d35a2.png",
@@ -59,7 +59,7 @@
     "static/js/runtime-main.122acadb.js",
     "static/css/2.00509426.chunk.css",
     "static/js/2.5d1db067.chunk.js",
-    "static/css/main.d36285c8.chunk.css",
+    "static/css/main.e1eedc7d.chunk.css",
     "static/js/main.274b2b50.chunk.js"
   ]
 }
