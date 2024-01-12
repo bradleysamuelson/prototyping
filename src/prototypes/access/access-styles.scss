@@ -43,6 +43,42 @@
 //         url('https://cdn-app.videoamp.com/preamp/fonts/5738932/390be235-bf11-42ee-8ba1-2dd10ca6a4ac.woff')
 //             format('woff');
 // }
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto Bold';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto Light';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto Medium';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto Semibold';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Roboto Thin';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    font-weight: 100;
+    font-style: normal;
+  }
 
 // add styles for this prototype
 .access-container {
@@ -60,11 +96,12 @@
     // --btn-text-link-active: var(--va-grey-700);
     // --btn-text-link-focus: var(--va-grey-700);
 
-    --font-light: "Roboto","Arial",sans-serif;
-    --font-medium: "Roboto","Arial",sans-serif;
-    --font-regular: "Roboto","Arial",sans-serif;
-    --font-semibold: "Roboto","Arial",sans-serif;
-    --font-thin: "Roboto","Arial",sans-serif;
+    --font-bold: "Roboto Bold", "Arial", sans-serif;
+    --font-light: "Roboto Light", "Arial", sans-serif;
+    --font-medium: "Roboto Medium", "Arial", sans-serif;
+    --font-regular: "Roboto Regular", "Arial", sans-serif;
+    --font-semibold: "Roboto Semibold", "Arial", sans-serif;
+    --font-thin: "Roboto Thin", "Arial", sans-serif;
 
     background-color: white;
     // padding-top: 78px;

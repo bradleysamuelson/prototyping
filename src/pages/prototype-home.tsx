@@ -9,8 +9,7 @@ function PrototypeHome() {
     return (
         <div className="prototype-home-container">
             <div className='prototype-home-header'>
-                <Signal icon={VideoAmp} size={3} />
-                <h1> UX Vision Prototypes:</h1>
+                <h1>Prototypes:</h1>
             </div>
             <div className='prototype-list-container'>
                 <div className='va-panel latest-prototypes'>

@@ -1,7 +1,7 @@
 {
-  "name": "ux-vision",
+  "name": "prototypes",
   "version": "0.1.0",
-  "homepage": "https://videoamp.github.io/ux-vision",
+  "homepage": "https://bradleysamuelson.github.io/prototyping/",
   "private": true,
   "dependencies": {
     "@preamp/core": "^1.5.9",

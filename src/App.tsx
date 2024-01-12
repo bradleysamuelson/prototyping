@@ -24,8 +24,8 @@ import Access from './prototypes/access/access';
 import PivotPrototype from './prototypes/pivot/pivot';
 import UnifiedNav from './prototypes/unified-nav/unified-nav';
 
-import './App.scss';
 import '@preamp/mixer';
+import './App.scss';
 
 
 export const App = () => (
