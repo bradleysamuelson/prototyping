@@ -14,7 +14,7 @@ import {VideoAmpFull} from '../../components/icons/videoamp-full'
 
 import { AppBar, AppBarItem, Button, ContentPadding, IconButton, Modal, Tooltip, TooltipPosition } from '@preamp/core';
 import { DropdownButton, OptionsType, OptionType, Select, SelectType } from '@preamp/select';
-import { Buy, ChevronDown, Measure, Book, Organization, Plan, PlayCircle, Power, Signal, Users } from '@preamp/signal';
+import { Buy, ChevronDown, Measure, Book, Organization, Plan, PlayCircle, Power, Search, Signal, Users } from '@preamp/signal';
 
 import { BellIcon } from '../../components/icons/bell-icon';
 
@@ -864,7 +864,7 @@ return (
                     <LinearPlans selectedNav={setNavId} />
                 </Route>
                 <Route path={`${url}/campaigns`}>
-                    <Campaigns selectedNav={setNavId} latestObject={setLatestObject} latestType={setLatestType} latestStatus={setLatestStatus} />
+                    <Campaigns company={company}  selectedNav={setNavId} latestObject={setLatestObject} latestType={setLatestType} latestStatus={setLatestStatus} />
                 </Route>
                 <Route path={`${url}/advanced-audiences`}>
                     <Audiences selectedNav={setNavId} />
@@ -968,6 +968,7 @@ return (
                     <span className='user-icon-initials'>HR</span>
                 </DropdownButton>
                 <Signal icon={BellIcon} size={1.25} className='notification-icon' />
+                <Signal icon={Search} size={1.25} className='notification-icon' />
             </div>
         </div>
     </div>

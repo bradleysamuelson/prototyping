@@ -5,6 +5,7 @@ import { Buy, Book, Audiences, ChevronDown, Measure, MenuEllipsis, Plan, PlayCir
 
 import dashboardScreenshot from '../../img/dashboard-table-screenshot.png';
 import dashboardDV from '../../img/dashboard-dv-example.svg';
+import dashboardDVGM from '../../img/dashboard-dv-example-2.svg';
 import { Button, ButtonTheme } from '@preamp/core';
 import { DropdownButton, OptionType, ValueType } from '@preamp/select';
 
@@ -375,14 +376,29 @@ export const Dashboard: React.FC<DashboardProps> = ({cardTabSelected, selectedNa
                             </div>
                         ) : (
                             <>
-                            <div className='dashboard-card-metric'>
-                                <div className='dashboard-card-metric-value'>$349.10k</div>
-                                <div className='dashboard-card-metric-label'>Total Value of Responses</div>
-                            </div>
-                            <div className='dashboard-card-metric'>
-                                <div className='dashboard-card-metric-value'>$698.00k</div>
-                                <div className='dashboard-card-metric-label'>Revenue</div>
-                            </div>
+                            {company === 'Subway' ? (
+                                <>
+                                <div className='dashboard-card-metric'>
+                                    <div className='dashboard-card-metric-value'>$349.10k</div>
+                                    <div className='dashboard-card-metric-label'>Total Value of Responses</div>
+                                </div>
+                                <div className='dashboard-card-metric'>
+                                    <div className='dashboard-card-metric-value'>$698.00k</div>
+                                    <div className='dashboard-card-metric-label'>Revenue</div>
+                                </div>
+                                </>
+                            ) : (
+                                <>
+                                <div className='dashboard-card-metric'>
+                                    <div className='dashboard-card-metric-value'>$220.3k</div>
+                                    <div className='dashboard-card-metric-label'>Total Value of Responses</div>
+                                </div>
+                                <div className='dashboard-card-metric'>
+                                    <div className='dashboard-card-metric-value'>$148k</div>
+                                    <div className='dashboard-card-metric-label'>Revenue</div>
+                                </div>
+                                </>
+                            )}
                             </>
                         )}
                         
@@ -390,18 +406,41 @@ export const Dashboard: React.FC<DashboardProps> = ({cardTabSelected, selectedNa
                     {tier === 'Pro' && (
                         <div className='dashboard-card-container'>
                             <div className='dashboard-card-75 dashbaord-card-dv'>
-                                <img src={dashboardDV} className='dashboard-dv-example' />
-                                <div className='dv-card-title'>Business Objectives</div>
-                                <div className='dv-card-metric'>115<span className='dv-card-metric-unit'>%</span></div>
-                                <div className='dv-current-label'>17% Over Plan</div>
+                                {company === 'Subway' ? (
+                                    <>
+                                    <img src={dashboardDV} className='dashboard-dv-example' />
+                                    <div className='dv-card-title'>Business Objectives</div>
+                                    <div className='dv-card-metric'>115<span className='dv-card-metric-unit'>%</span></div>
+                                    <div className='dv-current-label'>15% Over Plan</div>
+                                    </>
+                                ) : (
+                                    <>
+                                    <img src={dashboardDVGM} className='dashboard-dv-example' />
+                                    <div className='dv-card-title'>Business Objectives</div>
+                                    <div className='dv-card-metric'>85<span className='dv-card-metric-unit'>%</span></div>
+                                    <div className='dv-current-label red'>15% Under Plan</div>
+                                    </>
+                                )}
+                                
+                                
                                 <div className='dv-card-action'>
                                     <Signal icon={ArrowRightCircle} size={2} />
                                 </div>
                             </div>
                             <div className='dashboard-card-metric'>
-                                <div className='dashboard-card-metric-label'>Current Budget Plan</div>
-                                <div className='dashboard-card-metric-value'>$40.56M</div>
-                                <Button classID='btn-wide' theme={ButtonTheme.Secondary}>View Budgets</Button>
+                                {company === 'Subway' ? (
+                                    <>
+                                    <div className='dashboard-card-metric-label'>Current Budget Plan</div>
+                                    <div className='dashboard-card-metric-value'>$40.56M</div>
+                                    <Button classID='btn-wide' theme={ButtonTheme.Secondary}>View Budgets</Button>
+                                    </>
+                                ) : (
+                                    <>
+                                    <div className='dashboard-card-metric-label'>Current Budget Plan</div>
+                                    <div className='dashboard-card-metric-value'>$27.32M</div>
+                                    <Button classID='btn-wide' theme={ButtonTheme.Secondary}>View Budgets</Button>
+                                    </>
+                                )}
                             </div>
                         </div>
                     )}

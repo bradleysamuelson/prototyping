@@ -267,6 +267,9 @@
             top: 3.5rem;
             font-size: 3rem;
             font-family: var(--font-medium);
+            &.red {
+                color: var(--va-red-500);
+            }
         }
         .dv-card-metric-unit {
             font-size: 2rem;
@@ -282,6 +285,10 @@
             top: 25%;
             left: 75%;
             font-family: var(--font-medium);
+            &.red {
+                color: var(--va-red-500);
+                left: 70%;
+            }
         }
     }
     .dashboard-card-metric {
@@ -872,6 +879,10 @@
         align-items: center;
         position: sticky;
         top: 1.5rem;
+        color: var(--va-grey-500);
+        .va-signal-icon {
+            margin-bottom: 1rem;
+        }
     }
     .user-icon {
         margin: 0;

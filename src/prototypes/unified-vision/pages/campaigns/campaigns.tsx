@@ -23,7 +23,18 @@ import {CreateCampaign} from './create-campaign'
 import { VideoAmp } from '../../../../components/icons/videoamp';
 
 import campaignlistScreenshot from '../../img/campaignlist-screenshot.png';
-export const Campaigns: React.FC<any> = ({selectedNav, latestObject, latestType, latestStatus, ...rest}) => {
+
+export interface CampaignProps {
+    company: any;
+    selectedNav: any;
+    latestType: any;
+    latestObject: any;
+    latestStatus: any;
+    tier?: string;
+    latestLink?(event?: React.MouseEvent): void;
+    cardTabSelected?: any;
+}
+export const Campaigns: React.FC<CampaignProps> = ({selectedNav, company, latestObject, latestType, latestStatus, ...rest}) => {
     const history = useHistory();
     const { url } = useRouteMatch();
     React.useEffect(() => {
@@ -70,7 +81,7 @@ export const Campaigns: React.FC<any> = ({selectedNav, latestObject, latestType,
                             <div className='takeover-titlebar-left'>
                                 <Signal icon={VideoAmp} size={3} />
                                 <div className='titlebar-title'>
-                                    <div className='titlebar-brand'>Subway</div>
+                                    <div className='titlebar-brand'>{company}</div>
                                     <h1>Campaign_Name</h1>
                                 </div>
                             </div>
