@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/prototyping/static/css/main.40931ffc.chunk.css",
-    "main.js": "/prototyping/static/js/main.05cad1c1.chunk.js",
-    "main.js.map": "/prototyping/static/js/main.05cad1c1.chunk.js.map",
-    "runtime-main.js": "/prototyping/static/js/runtime-main.a4e18a34.js",
-    "runtime-main.js.map": "/prototyping/static/js/runtime-main.a4e18a34.js.map",
+    "main.css": "/prototyping/static/css/main.f2cc07eb.chunk.css",
+    "main.js": "/prototyping/static/js/main.27cca0cd.chunk.js",
+    "main.js.map": "/prototyping/static/js/main.27cca0cd.chunk.js.map",
+    "runtime-main.js": "/prototyping/static/js/runtime-main.e150233c.js",
+    "runtime-main.js.map": "/prototyping/static/js/runtime-main.e150233c.js.map",
     "static/css/2.00509426.chunk.css": "/prototyping/static/css/2.00509426.chunk.css",
-    "static/js/2.225e7989.chunk.js": "/prototyping/static/js/2.225e7989.chunk.js",
-    "static/js/2.225e7989.chunk.js.map": "/prototyping/static/js/2.225e7989.chunk.js.map",
-    "static/js/3.c4d8283d.chunk.js": "/prototyping/static/js/3.c4d8283d.chunk.js",
-    "static/js/3.c4d8283d.chunk.js.map": "/prototyping/static/js/3.c4d8283d.chunk.js.map",
+    "static/js/2.21a16222.chunk.js": "/prototyping/static/js/2.21a16222.chunk.js",
+    "static/js/2.21a16222.chunk.js.map": "/prototyping/static/js/2.21a16222.chunk.js.map",
+    "static/js/3.5895fa50.chunk.js": "/prototyping/static/js/3.5895fa50.chunk.js",
+    "static/js/3.5895fa50.chunk.js.map": "/prototyping/static/js/3.5895fa50.chunk.js.map",
     "index.html": "/prototyping/index.html",
     "static/css/2.00509426.chunk.css.map": "/prototyping/static/css/2.00509426.chunk.css.map",
-    "static/css/main.40931ffc.chunk.css.map": "/prototyping/static/css/main.40931ffc.chunk.css.map",
-    "static/js/2.225e7989.chunk.js.LICENSE.txt": "/prototyping/static/js/2.225e7989.chunk.js.LICENSE.txt",
+    "static/css/main.f2cc07eb.chunk.css.map": "/prototyping/static/css/main.f2cc07eb.chunk.css.map",
+    "static/js/2.21a16222.chunk.js.LICENSE.txt": "/prototyping/static/js/2.21a16222.chunk.js.LICENSE.txt",
     "static/media/NBC-deal.dd019187.png": "/prototyping/static/media/NBC-deal.dd019187.png",
     "static/media/activation-expanded.385d35a2.png": "/prototyping/static/media/activation-expanded.385d35a2.png",
     "static/media/ad-measurement-overview.a66cf2ab.png": "/prototyping/static/media/ad-measurement-overview.a66cf2ab.png",
@@ -31,6 +31,7 @@
     "static/media/cmro-expanded.785c7e69.png": "/prototyping/static/media/cmro-expanded.785c7e69.png",
     "static/media/comparison-chart.604801ba.png": "/prototyping/static/media/comparison-chart.604801ba.png",
     "static/media/content-measurement-expanded.3b3afa8a.png": "/prototyping/static/media/content-measurement-expanded.3b3afa8a.png",
+    "static/media/dashboard-dv-example-2.611f37c2.svg": "/prototyping/static/media/dashboard-dv-example-2.611f37c2.svg",
     "static/media/dashboard-dv-example.75c7d048.svg": "/prototyping/static/media/dashboard-dv-example.75c7d048.svg",
     "static/media/datamart-expanded.6ba11333.png": "/prototyping/static/media/datamart-expanded.6ba11333.png",
     "static/media/inclusionsexclusions.927b1a6b.png": "/prototyping/static/media/inclusionsexclusions.927b1a6b.png",
@@ -56,10 +57,10 @@
     "static/media/viewcampaign.4c21b05b.png": "/prototyping/static/media/viewcampaign.4c21b05b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a4e18a34.js",
+    "static/js/runtime-main.e150233c.js",
     "static/css/2.00509426.chunk.css",
-    "static/js/2.225e7989.chunk.js",
-    "static/css/main.40931ffc.chunk.css",
-    "static/js/main.05cad1c1.chunk.js"
+    "static/js/2.21a16222.chunk.js",
+    "static/css/main.f2cc07eb.chunk.css",
+    "static/js/main.27cca0cd.chunk.js"
   ]
 }

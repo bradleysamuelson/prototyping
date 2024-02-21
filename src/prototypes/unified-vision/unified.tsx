@@ -855,7 +855,7 @@ return (
                     />
                 </Route>
                 <Route path={`${url}/budgets`}>
-                    <Budgets selectedNav={setNavId} />
+                    <Budgets company={company} selectedNav={setNavId} />
                 </Route>
                 <Route path={`${url}/planning`}>
                     <Planning selectedNav={setNavId} />

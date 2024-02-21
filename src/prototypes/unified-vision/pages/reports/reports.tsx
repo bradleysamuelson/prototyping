@@ -49,7 +49,7 @@ const creatorOptions: OptionsType<OptionType> = [
 ];
 const advAudienceList: any = [
     { 
-        name: 'Beauty Care - Q3 23 Media Measurement', 
+        name: 'Specialty Foot Long - Q3 23 Media Measurement', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Hannah Rahr',
@@ -59,7 +59,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Overview Base', 
+        name: 'Specialty Foot Long - Q3 23 Plan Overview Base', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Josh Clark',
@@ -69,7 +69,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Comparison', 
+        name: 'Specialty Foot Long - Q3 23 Plan Comparison', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Stephanie Wayne',
@@ -79,7 +79,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Media Measurement Base', 
+        name: 'Specialty Foot Long - Q3 23 Media Measurement Base', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Gina Chee',
@@ -89,7 +89,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Media Plan Overview', 
+        name: 'Specialty Foot Long - Q3 23 Media Plan Overview', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Christian Rosales',
@@ -99,7 +99,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Overview Base', 
+        name: 'Specialty Foot Long - Q3 23 Plan Overview Base', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Catherine Chilton',
@@ -109,7 +109,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Overview', 
+        name: 'Specialty Foot Long - Q3 23 Plan Overview', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Brad Samuelson',
@@ -119,7 +119,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Media Measurement Base', 
+        name: 'Specialty Foot Long - Q3 23 Media Measurement Base', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Alan Maginn',
@@ -129,7 +129,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Media Measurement', 
+        name: 'Specialty Foot Long - Q3 23 Media Measurement', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Hannah Rahr',
@@ -139,7 +139,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Overview Base', 
+        name: 'Specialty Foot Long - Q3 23 Plan Overview Base', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Josh Clark',
@@ -149,7 +149,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Comparison', 
+        name: 'Specialty Foot Long - Q3 23 Plan Comparison', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Stephanie Wayne',
@@ -159,7 +159,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Advanced Media Measurement', 
+        name: 'Specialty Foot Long - Q3 23 Advanced Media Measurement', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Gina Chee',
@@ -169,7 +169,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 AMR', 
+        name: 'Specialty Foot Long - Q3 23 AMR', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Christian Rosales',
@@ -179,7 +179,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Overview Base', 
+        name: 'Specialty Foot Long - Q3 23 Plan Overview Base', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Catherine Chilton',
@@ -189,7 +189,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Plan Comparison', 
+        name: 'Specialty Foot Long - Q3 23 Plan Comparison', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Brad Samuelson',
@@ -199,7 +199,7 @@ const advAudienceList: any = [
         sharedIcon: false
     },
     { 
-        name: 'Beauty Care - Q3 23 Media Measurement', 
+        name: 'Specialty Foot Long - Q3 23 Media Measurement', 
         description: 'Date Range: 00/00/0000-00/00/0000',
         created: '5/18/2023',
         createdby: 'Alan Maginn',

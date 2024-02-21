@@ -139,50 +139,101 @@ const needsAttentionList: any = [
 ];
 const productList: any = [
     { 
-        name: 'Enterprise Solutions', 
+        name: 'Cold Sandwiches', 
         description: 'ID: 00',
         kpi: 'Site Visits, Report Downloads',
         campaigns: 'Campaign_Name',
         status: 'Active',
         heartIcon: false,
         sharedIcon: false,
-        iconclass: 'enterprise',
+        iconclass: 'cold',
         goal: 20,
         spent: 80
     },
     { 
-        name: 'Credit Cards', 
+        name: 'Hot Sandwiches', 
         description: 'ID: 00',
         kpi: 'Site Visits, Report Downloads',
         campaigns: 'Campaign_Name',
         status: 'Active',
         heartIcon: false,
         sharedIcon: false,
-        iconclass: 'creditcards',
+        iconclass: 'hot',
         goal: 35,
         spent: 52
     },
     { 
-        name: 'Beauty Care', 
+        name: 'Specialty Sandwiches', 
         description: 'ID: 00',
         kpi: 'Site Visits, Report Downloads',
         campaigns: 'Campaign_Name',
         status: 'Active',
         heartIcon: true,
         sharedIcon: false,
-        iconclass: 'beautycare',
+        iconclass: 'specialty',
         goal: 10,
         spent: 3
     },
     { 
-        name: 'Energy Drink', 
+        name: 'Seasonal Specials', 
         description: 'ID: 00',
         kpi: 'Site Visits, Report Downloads',
         campaigns: 'Campaign_Name',
         status: 'Active',
         heartIcon: false,
         sharedIcon: false,
-        iconclass: 'energydrink',
+        iconclass: 'seasonal',
+        goal: 60,
+        spent: 52
+    },
+    
+];
+const productListGM: any = [
+    { 
+        name: 'Electronic Vehicles', 
+        description: 'ID: 00',
+        kpi: 'Site Visits, Report Downloads',
+        campaigns: 'Campaign_Name',
+        status: 'Active',
+        heartIcon: false,
+        sharedIcon: false,
+        iconclass: 'ev',
+        goal: 20,
+        spent: 80
+    },
+    { 
+        name: 'Sport Utility Vehicles', 
+        description: 'ID: 00',
+        kpi: 'Site Visits, Report Downloads',
+        campaigns: 'Campaign_Name',
+        status: 'Active',
+        heartIcon: false,
+        sharedIcon: false,
+        iconclass: 'suv',
+        goal: 35,
+        spent: 52
+    },
+    { 
+        name: 'Compact Cars', 
+        description: 'ID: 00',
+        kpi: 'Site Visits, Report Downloads',
+        campaigns: 'Campaign_Name',
+        status: 'Active',
+        heartIcon: true,
+        sharedIcon: false,
+        iconclass: 'compact',
+        goal: 10,
+        spent: 3
+    },
+    { 
+        name: 'Luxury Vehicles', 
+        description: 'ID: 00',
+        kpi: 'Site Visits, Report Downloads',
+        campaigns: 'Campaign_Name',
+        status: 'Active',
+        heartIcon: false,
+        sharedIcon: false,
+        iconclass: 'luxury',
         goal: 60,
         spent: 52
     },
@@ -345,7 +396,13 @@ export const Dashboard: React.FC<DashboardProps> = ({cardTabSelected, selectedNa
                             <div className='dashboard-card-title'>Pick up where you left off</div>
                             <div className='dashboard-card-content'>
                                 <div className='dashboard-card-content-left'>
-                                    <div>{latestObject}</div>
+                                    <div>
+                                        {company === 'Subway' ? (
+                                            <>{latestObject}</> 
+                                        ) : (
+                                            <span>EV Report Q4 2023</span>
+                                        )}
+                                    </div>
                                     <div className='dashboard-card-description'>
                                         {latestType === 'campaign' ? (
                                             <span>Campaign ID: 0000 | Campaign Status: </span>
@@ -355,7 +412,11 @@ export const Dashboard: React.FC<DashboardProps> = ({cardTabSelected, selectedNa
                                     </div>
                                 </div>
                                 <div className='dashboard-card-content-right'>
-                                    <Button className='btn-wide' onClick={latestLink}>{latestType === 'report' ? <span>View Report</span> : <span>View Campaign</span>}</Button>
+                                    {company === 'Subway' ? (
+                                        <Button className='btn-wide' onClick={latestLink}>{latestType === 'report' ? <span>View Report</span> : <span>View Campaign</span>}</Button>
+                                        ) : (
+                                        <Button className='btn-wide' ><span>View Report</span></Button>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -463,50 +524,102 @@ export const Dashboard: React.FC<DashboardProps> = ({cardTabSelected, selectedNa
                                     <div className='list-col-status'>Spent Budget</div>
                                 </div>
                                 <div className='list-rows'>
-                                {productList.map((option:any, index: number) => (
-                                    <div className='list-row' key={index}>
-                                        <div className='list-row-left'>
-                                            <div className='list-col-icon'>
-                                                <div className={cx('list-item-icon', option.iconclass)}></div>
-                                            </div>
-                                            <div className='list-col-name'>
-                                                <div className='list-item-name'>
-                                                    <a className='item-name-link'>{option.name}</a> 
+                                {company === 'Subway' ? (
+                                    <>
+                                        {productList.map((option:any, index: number) => (
+                                            <div className='list-row' key={index}>
+                                                <div className='list-row-left'>
+                                                    <div className='list-col-icon'>
+                                                        <div className={cx('list-item-icon', option.iconclass)}></div>
+                                                    </div>
+                                                    <div className='list-col-name'>
+                                                        <div className='list-item-name'>
+                                                            <a className='item-name-link'>{option.name}</a> 
+                                                        </div>
+                                                        <div className='list-item-description'>{option.description}</div>
+                                                    </div>
+                                                    <div className='list-col-kpi'>
+                                                        <div className='list-item'>{option.kpi}</div>
+                                                    </div>
+                                                    <div className='list-col-dv'>
+                                                        <div className='list-item list-item-dv'>
+                                                            <span className='list-item-dv-label'>{option.goal}%</span>
+                                                            <div className='list-item-dv-bar-container'>
+                                                                <div className='list-item-dv-bar-value' style={{'width': `${option.goal}%`}}></div>
+                                                            </div>                                             
+                                                        </div>
+                                                    </div>
+                                                    <div className='list-col-dv'>
+                                                        <div className='list-item list-item-dv'>
+                                                            <span className='list-item-dv-label'>{option.spent}%</span>
+                                                            <div className='list-item-dv-bar-container'>
+                                                                <div className='list-item-dv-bar-value' style={{'width': `${option.spent}%`}}></div>
+                                                            </div>                                             
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div className='list-item-description'>{option.description}</div>
-                                            </div>
-                                            <div className='list-col-kpi'>
-                                                <div className='list-item'>{option.kpi}</div>
-                                            </div>
-                                            <div className='list-col-dv'>
-                                                <div className='list-item list-item-dv'>
-                                                    <span className='list-item-dv-label'>{option.goal}%</span>
-                                                    <div className='list-item-dv-bar-container'>
-                                                        <div className='list-item-dv-bar-value' style={{'width': `${option.goal}%`}}></div>
-                                                    </div>                                             
+                                                <div className='list-col-actions'>
+                                                    {/* <Signal icon={MenuEllipsis} size={1} /> */}
+                                                    <DropdownButton
+                                                        dataUI="icon-dropdown"
+                                                        icon={MenuEllipsis}
+                                                        onChange={dropdownChanged}
+                                                        options={rowActionOptions}
+                                                        shouldCloseOnSelect={true}
+                                                    />
                                                 </div>
                                             </div>
-                                            <div className='list-col-dv'>
-                                                <div className='list-item list-item-dv'>
-                                                    <span className='list-item-dv-label'>{option.spent}%</span>
-                                                    <div className='list-item-dv-bar-container'>
-                                                        <div className='list-item-dv-bar-value' style={{'width': `${option.spent}%`}}></div>
-                                                    </div>                                             
+                                        ))}
+                                    </>
+                                ):(
+                                    <>
+                                        {productListGM.map((option:any, index: number) => (
+                                            <div className='list-row' key={index}>
+                                                <div className='list-row-left'>
+                                                    <div className='list-col-icon'>
+                                                        <div className={cx('list-item-icon', option.iconclass)}></div>
+                                                    </div>
+                                                    <div className='list-col-name'>
+                                                        <div className='list-item-name'>
+                                                            <a className='item-name-link'>{option.name}</a> 
+                                                        </div>
+                                                        <div className='list-item-description'>{option.description}</div>
+                                                    </div>
+                                                    <div className='list-col-kpi'>
+                                                        <div className='list-item'>{option.kpi}</div>
+                                                    </div>
+                                                    <div className='list-col-dv'>
+                                                        <div className='list-item list-item-dv'>
+                                                            <span className='list-item-dv-label'>{option.goal}%</span>
+                                                            <div className='list-item-dv-bar-container'>
+                                                                <div className='list-item-dv-bar-value' style={{'width': `${option.goal}%`}}></div>
+                                                            </div>                                             
+                                                        </div>
+                                                    </div>
+                                                    <div className='list-col-dv'>
+                                                        <div className='list-item list-item-dv'>
+                                                            <span className='list-item-dv-label'>{option.spent}%</span>
+                                                            <div className='list-item-dv-bar-container'>
+                                                                <div className='list-item-dv-bar-value' style={{'width': `${option.spent}%`}}></div>
+                                                            </div>                                             
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className='list-col-actions'>
+                                                    {/* <Signal icon={MenuEllipsis} size={1} /> */}
+                                                    <DropdownButton
+                                                        dataUI="icon-dropdown"
+                                                        icon={MenuEllipsis}
+                                                        onChange={dropdownChanged}
+                                                        options={rowActionOptions}
+                                                        shouldCloseOnSelect={true}
+                                                    />
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className='list-col-actions'>
-                                            {/* <Signal icon={MenuEllipsis} size={1} /> */}
-                                            <DropdownButton
-                                                dataUI="icon-dropdown"
-                                                icon={MenuEllipsis}
-                                                onChange={dropdownChanged}
-                                                options={rowActionOptions}
-                                                shouldCloseOnSelect={true}
-                                            />
-                                        </div>
-                                    </div>
-                                ))}
+                                        ))}
+                                    </>
+                                )}
+                                
                                 </div>  
                             </div>
                         )}

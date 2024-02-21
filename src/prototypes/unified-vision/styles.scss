@@ -1678,25 +1678,25 @@
     height: 36px;
     background: var(--smoke);
     border-radius: 50%;
-    &.enterprise {
-        background-color: #EF3E42;
+    &.cold {
+        background-color: #3796a5;
     }
-    &.creditcards, &.red {
-        background-color: #ED117F;
+    &.hot, &.red {
+        background-color: #c93e4c;
     }
-    &.beautycare {
-        background-color: #E220D7;
+    &.specialty {
+        background-color: #20d8e2;
     }
-    &.energydrink {
-        background-color: #02BFFF;
+    &.seasonal, &.ev {
+        background-color: #32aa3a;
     }
-    &.dark {
+    &.dark, &.suv {
         background-color: var(--patinaed);
     }
-    &.orange {
+    &.orange, &.compact {
         background-color: orange;
     }
-    &.green {
+    &.green, &.luxury {
         background-color: green;
     }
     &.purple {

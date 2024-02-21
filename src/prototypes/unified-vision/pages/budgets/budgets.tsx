@@ -3,7 +3,7 @@ import { Button, ButtonTheme } from '@preamp/core';
 import budgetScreenshot from '../../img/budgets-screenshot.png';
 import { Task, ViewMode, Gantt } from 'gantt-task-react';
 import { ViewSwitcher } from './viewer-switcher';
-import { getStartEndDateForProject, initTasks } from "./helper";
+import { getStartEndDateForProject, initTasks, initGMTasks } from "./helper";
 
 import "gantt-task-react/dist/index.css";
 const currentDate = new Date();
@@ -178,9 +178,20 @@ const currentDate = new Date();
 //         </div>
 //     );
 // };
-export const Budgets: React.FC<any> = ({selectedNav, ...rest}) => {
+export interface BudgetProps {
+  company: any;
+  selectedNav: any;
+  // latestType: any;
+  // latestObject: any;
+  // latestStatus: any;
+  // tier?: string;
+  // latestLink?(event?: React.MouseEvent): void;
+  // cardTabSelected?: any;
+}
+export const Budgets: React.FC<BudgetProps> = ({selectedNav, company, ...rest}) => {
     const [view, setView] = React.useState<ViewMode>(ViewMode.Month);
     const [tasks, setTasks] = React.useState<Task[]>(initTasks());
+    const [GMTasks, setGMTasks] = React.useState<Task[]>(initGMTasks());
     const [isChecked, setIsChecked] = React.useState(true);
     let columnWidth = 65;
     if (view === ViewMode.Year) {
@@ -263,33 +274,71 @@ export const Budgets: React.FC<any> = ({selectedNav, ...rest}) => {
                         onViewListChange={setIsChecked}
                         isChecked={isChecked}
                     /> */}
-                    <Gantt
-                        tasks={tasks}
-                        viewMode={view}
-                        onDateChange={handleTaskChange}
-                        onDelete={handleTaskDelete}
-                        onProgressChange={handleProgressChange}
-                        onDoubleClick={handleDblClick}
-                        onClick={handleClick}
-                        onSelect={handleSelect}
-                        onExpanderClick={handleExpanderClick}
-                        listCellWidth={isChecked ? "215px" : ""}
-                        columnWidth={columnWidth}
-                        headerHeight={40}
-                        // ganttHeight={400}
-                        rowHeight={40}
-                        barCornerRadius={6}
-                        barBackgroundColor='var(--smoke)'
-                        barProgressColor='var(--va-teal-300'
-                        barProgressSelectedColor='var(--va-teal-300'
-                        fontFamily='var(--font-regular)'
-                        fontSize='0.875rem'
-                        projectBackgroundColor='var(--shade)'
-                        projectProgressColor='var(--va-teal-300)'
-                        projectBackgroundSelectedColor='var(--shade)'
-                        projectProgressSelectedColor='var(--va-teal-300)'
-                        todayColor='rgba(216, 214, 210, 0.15)'
-                    />
+                    {company === 'Subway' ? (
+                      <>
+                        <Gantt
+                          tasks={tasks}
+                          viewMode={view}
+                          onDateChange={handleTaskChange}
+                          onDelete={handleTaskDelete}
+                          onProgressChange={handleProgressChange}
+                          onDoubleClick={handleDblClick}
+                          onClick={handleClick}
+                          onSelect={handleSelect}
+                          onExpanderClick={handleExpanderClick}
+                          listCellWidth={isChecked ? "215px" : ""}
+                          columnWidth={columnWidth}
+                          headerHeight={40}
+                          // ganttHeight={400}
+                          rowHeight={40}
+                          barCornerRadius={6}
+                          barBackgroundColor='var(--smoke)'
+                          barProgressColor='var(--va-teal-300'
+                          barProgressSelectedColor='var(--va-teal-300'
+                          fontFamily='var(--font-regular)'
+                          fontSize='0.875rem'
+                          projectBackgroundColor='var(--shade)'
+                          projectProgressColor='var(--va-teal-300)'
+                          projectBackgroundSelectedColor='var(--shade)'
+                          projectProgressSelectedColor='var(--va-teal-300)'
+                          todayColor='rgba(216, 214, 210, 0.15)'
+                        />
+                      
+                      </>
+                    ) : (
+                      <>
+                        <Gantt
+                          tasks={GMTasks}
+                          viewMode={view}
+                          onDateChange={handleTaskChange}
+                          onDelete={handleTaskDelete}
+                          onProgressChange={handleProgressChange}
+                          onDoubleClick={handleDblClick}
+                          onClick={handleClick}
+                          onSelect={handleSelect}
+                          onExpanderClick={handleExpanderClick}
+                          listCellWidth={isChecked ? "215px" : ""}
+                          columnWidth={columnWidth}
+                          headerHeight={40}
+                          // ganttHeight={400}
+                          rowHeight={40}
+                          barCornerRadius={6}
+                          barBackgroundColor='var(--smoke)'
+                          barProgressColor='var(--va-teal-300'
+                          barProgressSelectedColor='var(--va-teal-300'
+                          fontFamily='var(--font-regular)'
+                          fontSize='0.875rem'
+                          projectBackgroundColor='var(--shade)'
+                          projectProgressColor='var(--va-teal-300)'
+                          projectBackgroundSelectedColor='var(--shade)'
+                          projectProgressSelectedColor='var(--va-teal-300)'
+                          todayColor='rgba(216, 214, 210, 0.15)'
+                        />
+                      </>
+                    )
+
+                    }
+                    
                 </div>
             </div>
         </div>
